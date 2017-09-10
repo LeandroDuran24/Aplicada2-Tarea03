@@ -1,0 +1,57 @@
+﻿
+.page-header {
+    color: orangered; /*color*/
+    /*text-decoration: underline; subrayado*/
+    text-transform: capitalize;
+    font-size: 44px;
+    font-weight: bold; /*negrita*/
+}
+
+.label {
+    color: orangered;
+    font-size: 20px;
+}
+
+.boton {
+    background: #ffffff;
+    color: black;
+    font-size: 16px; /*tamano de letra*/
+    padding: 10px 24px; /*largo y ancho*/
+    border-radius: 8px;
+    border: 2px solid #0026ff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.boton-buscar {
+    background: #ffffff;
+    color: black;
+    font-size: 16px; /*tamano de letra*/
+    padding: 7px 18px; /*largo y ancho*/
+    border-radius: 8px;
+    border: 2px solid #0026ff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    .boton-buscar:hover {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+.boton:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.page-footer {
+    text-align: center;
+    color: orangered;
+    font-style: italic;
+    /*text-decoration: line-through;*/
+    font-size: 14px;
+}
+
+.iconos {
+    font-size: 20em;
+}
