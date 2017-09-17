@@ -21,7 +21,26 @@
     <form id="form1" runat="server">
        
         <header>
-            <h1 class="page-header text-center">Registro Usuarios <span class="glyphicon glyphicon-user"></span></h1>
+
+            <nav class=" navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">BarberShop</a>&nbsp
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="Menu Principal.aspx"><span class="glyphicon glyphicon-home">Inicio &nbsp</span></a></li>
+                                <li class="active"><a href="UsuarioForm.aspx"><span class="glyphicon glyphicon-user">Usuarios &nbsp</span></a></li>
+                                <li><a href="../Consultas/FormConsulta.aspx"><span class="glyphicon glyphicon-search">Consulta &nbsp</span></a></li>
+                                <li><a href="../Reporte/ReportUsuarios.aspx"><span class="glyphicon glyphicon-list-alt">Reporte</span></a></li>
+                                
+                                
+                            </ul>
+                            <br />
+                            <h1 class="page-header text-center">Registro Usuarios <span class="glyphicon glyphicon-user"></span></h1>
+                        </div>
+                    </nav>
+
+            
         </header>
 
         <div class="container-fluid">
@@ -35,8 +54,9 @@
                 </div>
                 <div class="text-center">
                   
-                    <asp:TextBox ID="idTextbox" runat="server" Width="198px" Height="33px" ForeColor="#CCCCCC"></asp:TextBox>&nbsp
-                     <asp:Button ID="Buscar"  CssClass="btn btn-primary btn-md boton-buscar" runat="server" Text="Buscar" />
+                    <asp:TextBox ID="idTextbox" runat="server" Width="190px" Height="33px" ForeColor="Black"></asp:TextBox>&nbsp
+                     <asp:Button ID="Buscar"  CssClass="btn btn-primary btn-md boton-buscar" runat="server" Text="Buscar" OnClick="Buscar_Click" Width="105px" ValidationGroup="buscar" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="idTextbox" ErrorMessage="#" Font-Bold="True" Font-Italic="True" ForeColor="Red" ValidationGroup="buscar"></asp:RequiredFieldValidator>
                 </div>
 
                 <!--input del nombre-->
@@ -47,6 +67,9 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="NombreTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                   
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="NombreTextbox" ErrorMessage="#" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
+                   
                 </div>
                 
                 <!--input del email-->
@@ -57,8 +80,23 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="emailTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="emailTextbox" ErrorMessage="#" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
                 </div>
-               
+
+                <!--input de fecha-->
+                <div class="text-center">
+                    <div class="label">
+                    <label for="fecha">Fecha</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <asp:TextBox ID="fecha" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                    
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="fecha" ErrorMessage="#" Font-Bold="True" Font-Italic="True"></asp:RequiredFieldValidator>
+                    
+                </div>
+
+                           
                 <!--input del tipo-->
                 <div class="text-center">
                     <div class="label">
@@ -67,6 +105,7 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="tipoTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tipoTextbox" ErrorMessage="#" Font-Bold="True" Font-Italic="False" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
                 </div>
                
                 <!--input del clave-->
@@ -78,6 +117,7 @@
                 </div>
                 <div class="text-center">
                     <asp:TextBox ID="claveTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="claveTextbox" ErrorMessage="#" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
                 </div>
                 
                 <!--input del confirmar-->
@@ -87,7 +127,9 @@
                     </div>
                 </div>
                 <div class="text-center">
-                     <asp:TextBox ID="confTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+                     <asp:TextBox Type="password" ID="confTextbox" runat="server" Width="300px" Height="33px"></asp:TextBox>
+
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="confTextbox" ErrorMessage="#" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
 
                 </div>
                 <br />
@@ -97,32 +139,20 @@
                 
                 <div class="text-center">
                    
-                    
-                   
-                    
-                   
-                    
-                   
                     <asp:Button ID="Nuevo" CssClass="btn btn-primary btn-md boton" runat="server" Text="Nuevo" OnClick="Nuevo_Click" />&nbsp&nbsp
-                    <asp:Button ID="Button1" CssClass="btn btn-primary btn-md boton" runat ="server" OnClick="Button1_Click" Text="Guardar" />&nbsp&nbsp
-                    <asp:Button ID="Eliminar" CssClass="btn btn-primary btn-md boton" runat="server" Text="Eliminar" />
+                    <asp:Button ID="Button1" CssClass="btn btn-primary btn-md boton" runat ="server" OnClick="Button1_Click" Text="Guardar" ValidationGroup="guardar" />&nbsp&nbsp
+                    <asp:Button ID="Eliminar" CssClass="btn btn-primary btn-md boton" runat="server" Text="Eliminar" OnClick="Eliminar_Click" />
            </div>
 
             </div>
         </div>
         
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        
 
         <footer>
-            <div class="page-footer">
-                <p><span class="glyphicon glyphicon-copyright-mark"></span>Leandro Rafael Duran Minaya[Programacion Aplicada II].</p>
+            
+                <p class="page-footer"><span class="glyphicon glyphicon-copyright-mark"></span>Leandro Rafael Duran Minaya[Programacion Aplicada II].</p>
 
-            </div>
+           
         </footer>
 
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
+using System.Linq.Expressions;
 
 namespace Tarea_2.DAL
 {
@@ -14,7 +14,8 @@ namespace Tarea_2.DAL
         {
             context = new UsuarioDb();
         }
-        private DbSet<TEntity> EntitySet
+
+        private DbSet<TEntity>EntitySet
         {
             get
             {
@@ -22,9 +23,73 @@ namespace Tarea_2.DAL
             }
         }
 
+      
+
+        public TEntity Buscar(Expression<Func<TEntity, bool>> Id)
+        {
+            TEntity result = null;
+            try
+            {
+             
+                result = EntitySet.FirstOrDefault(Id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+
         public void Dispose()
         {
-            throw new NotImplementedException();
+            if (context != null)
+            {
+                context.Dispose();
+            }
+        }
+
+        public bool Eliminar(TEntity Id)
+        {
+            bool result = false;
+            try
+            {
+                EntitySet.Attach(Id);
+                EntitySet.Remove(Id);
+                result = context.SaveChanges() > 0;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+
+        public List<TEntity> GetList(Expression<Func<TEntity, bool>> buscar)
+        {
+            try
+            {
+                return EntitySet.Where(buscar).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public List<TEntity> GetListTodo()
+        {
+            try
+            {
+                return EntitySet.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public TEntity Guardar(TEntity nuevo)
@@ -45,5 +110,21 @@ namespace Tarea_2.DAL
             return retorno;
         }
 
+        public bool Modificar(TEntity criterio)
+        {
+            bool result = false;
+            try
+            {
+                EntitySet.Attach(criterio);
+                context.Entry(criterio).State = EntityState.Modified;
+                result = context.SaveChanges() > 0;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
     }
 }

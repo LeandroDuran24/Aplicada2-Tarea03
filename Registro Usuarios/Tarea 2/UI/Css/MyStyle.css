@@ -46,12 +46,18 @@
 
 .page-footer {
     text-align: center;
-    color: orangered;
+    color: white;
     font-style: italic;
-    /*text-decoration: line-through;*/
+    background-color: dodgerblue;
     font-size: 14px;
 }
 
-.iconos {
+.iconos 
+{
     font-size: 20em;
+}
+
+.grid
+{
+    text-align:right;
 }
