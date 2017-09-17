@@ -103,17 +103,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DbUsuariosDataSet.xsc">
-      <DependentUpon>DbUsuariosDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="DbUsuariosDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbUsuariosDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="DbUsuariosDataSet.xss">
-      <DependentUpon>DbUsuariosDataSet.xsd</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -141,11 +130,6 @@
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\Repositorio.cs" />
     <Compile Include="DAL\UsuarioDb.cs" />
-    <Compile Include="DbUsuariosDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbUsuariosDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -186,7 +170,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\Reporte\Report1.rdlc" />
+    <EmbeddedResource Include="UI\Reporte\Usuarios.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

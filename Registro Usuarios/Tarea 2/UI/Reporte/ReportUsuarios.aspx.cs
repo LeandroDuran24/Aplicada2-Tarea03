@@ -20,7 +20,9 @@ namespace Tarea_2.UI.Reporte
         {
 
 
-            this.ReportViewer1.Visible = true;               
+            this.ReportViewer1.Visible = true;
+            ReportViewer1.DataBind();
+            ReportViewer1.LocalReport.Refresh();
         }
 
     }
