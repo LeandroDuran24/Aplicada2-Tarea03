@@ -17,10 +17,42 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox9</rd:DefaultName>
-        <Top>0.56417cm</Top>
-        <Left>25.18516cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>12.22058cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>4.35208cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>0.17639cm</Top>
+        <Left>10.8671cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.28292cm</Width>
+        <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -32,13 +64,18 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>4.5625in</Height>
-    <Style />
+    <Height>4.57292in</Height>
+    <Style>
+      <Border>
+        <Color>Blue</Color>
+        <Style>Double</Style>
+      </Border>
+    </Style>
   </Body>
-  <Width>13.57675in</Width>
+  <Width>8.12884in</Width>
   <Page>
     <PageHeader>
-      <Height>2.71349cm</Height>
+      <Height>2.31662cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -62,9 +99,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.47307cm</Top>
-          <Left>11.95599cm</Left>
-          <Height>1.07625cm</Height>
+          <Top>0.25576cm</Top>
+          <Left>4.79933cm</Left>
+          <Height>1.20854cm</Height>
           <Width>10.04063cm</Width>
           <Style>
             <Border>
@@ -77,10 +114,10 @@
           </Style>
         </Textbox>
         <Line Name="Line1">
-          <Top>1.61988cm</Top>
-          <Left>11.95599cm</Left>
+          <Top>1.46431cm</Top>
+          <Left>4.79933cm</Left>
           <Height>0cm</Height>
-          <Width>10.04063cm</Width>
+          <Width>9.35271cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -91,12 +128,13 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>3.12208cm</Height>
+      <Height>0.9525cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -115,8 +153,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>2.52208cm</Top>
-          <Left>15.87183cm</Left>
+          <Top>0.17639cm</Top>
+          <Left>8.43294cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -132,7 +170,8 @@
       </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Color>Blue</Color>
+          <Style>Double</Style>
         </Border>
       </Style>
     </PageFooter>
