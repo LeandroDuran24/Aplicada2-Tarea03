@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Tarea_2.Entidades;
+using Tarea_2.UI.Reporte;
 
 namespace Tarea_2.UI.Formularios
 {
@@ -92,6 +93,11 @@ namespace Tarea_2.UI.Formularios
         {
             SeleccionarCombo();
             
+        }
+
+        protected void Reporte_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

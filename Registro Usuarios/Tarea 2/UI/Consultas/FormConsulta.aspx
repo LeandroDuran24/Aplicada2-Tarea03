@@ -91,6 +91,7 @@
         <br />
         <br />
         <br />
+        <asp:Button ID="Reporte" runat="server" OnClick="Reporte_Click" Text="Imprimir" />
         <br />
         <footer>
 

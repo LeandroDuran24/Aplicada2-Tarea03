@@ -27,8 +27,8 @@ namespace Tarea_2.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Leandro Duran\\sourc" +
-            "e\\repos\\Aplicada2-Tarea02\\Registro Usuarios\\Tarea 2\\Base de Datos\\DbUsuarios.mdf" +
-            "\";Integrated Security=True;Connect Timeout=30")]
+            "e\\repos\\Aplicada2-Tarea02\\Registro Usuarios\\Tarea 2\\Base de Datos\\DbUsuario.mdf\"" +
+            ";Integrated Security=True;Connect Timeout=30")]
         public string ConStr {
             get {
                 return ((string)(this["ConStr"]));

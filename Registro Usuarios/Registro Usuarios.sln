@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea 2", "Tarea 2\Tarea 2.csproj", "{F8431C14-3E14-4CF0-B571-CF7A1008EBAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea 3", "Tarea 2\Tarea 3.csproj", "{F8431C14-3E14-4CF0-B571-CF7A1008EBAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
