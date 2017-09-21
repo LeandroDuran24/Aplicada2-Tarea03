@@ -2,40 +2,7 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Textbox Name="Textbox16">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Listado de Usuarios</Value>
-                <Style>
-                  <FontFamily>Bodoni MT</FontFamily>
-                  <FontSize>16pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>0.53393cm</Top>
-        <Left>7.01632cm</Left>
-        <Height>0.73499cm</Height>
-        <Width>4.87585cm</Width>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Tablix Name="Tablix2">
+      <Tablix Name="Tablix1">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
@@ -45,10 +12,10 @@
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.17926cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.20896cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
@@ -60,7 +27,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox10">
+                    <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -70,45 +37,27 @@
                               <Value>id Usuario</Value>
                               <Style>
                                 <FontStyle>Italic</FontStyle>
-                                <FontFamily>Bodoni MT</FontFamily>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <TextDecoration>Underline</TextDecoration>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>None</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </TopBorder>
                         <BottomBorder>
                           <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
                         </BottomBorder>
-                        <LeftBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </RightBorder>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -120,7 +69,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox12">
+                    <Textbox Name="Textbox3">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -130,45 +79,27 @@
                               <Value>nombres</Value>
                               <Style>
                                 <FontStyle>Italic</FontStyle>
-                                <FontFamily>Bodoni MT</FontFamily>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <TextDecoration>Underline</TextDecoration>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>None</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </TopBorder>
                         <BottomBorder>
                           <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
                         </BottomBorder>
-                        <LeftBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </RightBorder>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -180,7 +111,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox17">
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -190,45 +121,27 @@
                               <Value>email</Value>
                               <Style>
                                 <FontStyle>Italic</FontStyle>
-                                <FontFamily>Bodoni MT</FontFamily>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <TextDecoration>Underline</TextDecoration>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>None</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </TopBorder>
                         <BottomBorder>
                           <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
                         </BottomBorder>
-                        <LeftBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </RightBorder>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -240,67 +153,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox21">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>tipo Email</Value>
-                              <Style>
-                                <FontStyle>Italic</FontStyle>
-                                <FontFamily>Bodoni MT</FontFamily>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <TextDecoration>Underline</TextDecoration>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox21</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </Border>
-                        <TopBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </TopBorder>
-                        <BottomBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </BottomBorder>
-                        <LeftBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </RightBorder>
-                        <BackgroundColor>LightGrey</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox23">
+                    <Textbox Name="Textbox7">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -310,45 +163,69 @@
                               <Value>fecha</Value>
                               <Style>
                                 <FontStyle>Italic</FontStyle>
-                                <FontFamily>Bodoni MT</FontFamily>
                                 <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <TextDecoration>Underline</TextDecoration>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox23</rd:DefaultName>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>None</Style>
                         </Border>
-                        <TopBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </TopBorder>
                         <BottomBorder>
                           <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
                         </BottomBorder>
-                        <LeftBorder>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>tipo Email</Value>
+                              <Style>
+                                <FontStyle>Italic</FontStyle>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
                           <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </LeftBorder>
-                        <RightBorder>
-                          <Color>LightGrey</Color>
-                          <Style>Double</Style>
-                          <Width>2pt</Width>
-                        </RightBorder>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
                         <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -373,21 +250,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!idUsuario.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>idUsuario</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>None</Style>
-                          <Width>0.5pt</Width>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -406,21 +283,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!nombres.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>nombres</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>None</Style>
-                          <Width>0.5pt</Width>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -439,54 +316,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!email.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>email</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>None</Style>
-                          <Width>0.5pt</Width>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="tipoEmail">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!tipoEmail.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>tipoEmail</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>None</Style>
-                          <Width>0.5pt</Width>
-                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -505,21 +349,54 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!fecha.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>fecha</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>None</Style>
-                          <Width>0.5pt</Width>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="tipoEmail">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!tipoEmail.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>tipoEmail</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -551,35 +428,62 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Top>1.44531cm</Top>
-        <Left>2.43099cm</Left>
+        <DataSetName>DataSetUsuario</DataSetName>
+        <Top>1.73453cm</Top>
+        <Left>1.27cm</Left>
         <Height>1.2cm</Height>
-        <Width>12.88822cm</Width>
-        <ZIndex>1</ZIndex>
+        <Width>12.5cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Listado de Usuario</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox19</rd:DefaultName>
+        <Top>1.0287cm</Top>
+        <Left>6.27cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.32563cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>6.49524in</Height>
-    <Style>
-      <Border>
-        <Color>DodgerBlue</Color>
-        <Style>Double</Style>
-      </Border>
-    </Style>
+    <Height>5.75in</Height>
+    <Style />
   </Body>
-  <Width>8.41114in</Width>
+  <Width>8.05643in</Width>
   <Page>
     <PageHeader>
-      <Height>2.35165cm</Height>
+      <Height>2.39889cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="Textbox13">
+        <Textbox Name="Textbox17">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
@@ -588,20 +492,18 @@
                 <TextRun>
                   <Value>BarberShop Duran</Value>
                   <Style>
-                    <FontFamily>French Script MT</FontFamily>
-                    <FontSize>28pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <Color>DarkOrange</Color>
+                    <FontFamily>Old English Text MT</FontFamily>
+                    <FontSize>24pt</FontSize>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Left>7.01632cm</Left>
-          <Height>1.22096cm</Height>
-          <Width>6.8336cm</Width>
+          <rd:DefaultName>Textbox17</rd:DefaultName>
+          <Left>5.68792cm</Left>
+          <Height>1.1497cm</Height>
+          <Width>7.31542cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -612,18 +514,15 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Textbox14">
+        <Textbox Name="Textbox18">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Calle Principal de Cenovi. S.F.M. RD</Value>
-                  <Style>
-                    <FontFamily>Bodoni MT</FontFamily>
-                    <FontSize>11pt</FontSize>
-                  </Style>
+                  <Value>Calle Principal de Cenovi, Provincia Duarte. RD</Value>
+                  <Style />
                 </TextRun>
               </TextRuns>
               <Style />
@@ -631,30 +530,18 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Telefono:829-367-7767</Value>
-                  <Style>
-                    <FontFamily>Bodoni MT</FontFamily>
-                    <FontSize>11pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value />
+                  <Value>Telefono: 829-367-7767</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox14</rd:DefaultName>
-          <Top>1.32679cm</Top>
-          <Left>7.74527cm</Left>
-          <Height>0.97798cm</Height>
-          <Width>6.65774cm</Width>
+          <rd:DefaultName>Textbox18</rd:DefaultName>
+          <Top>1.25554cm</Top>
+          <Left>5.68792cm</Left>
+          <Height>1.14335cm</Height>
+          <Width>7.31542cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -669,17 +556,16 @@
       </ReportItems>
       <Style>
         <Border>
-          <Color>DodgerBlue</Color>
-          <Style>Double</Style>
+          <Style>None</Style>
         </Border>
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.88458cm</Height>
+      <Height>0.92314cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="PageNumber">
+        <Textbox Name="Textbox20">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
@@ -693,75 +579,11 @@
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>7.74527cm</Left>
-          <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox19">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>/</Value>
-                  <Style>
-                    <FontSize>12pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <Color>DodgerBlue</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox19</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>10.35111cm</Left>
-          <Height>0.6cm</Height>
-          <Width>0.25914cm</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox20">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>0.10583cm</Top>
-          <Left>10.75136cm</Left>
-          <Height>0.6cm</Height>
+          <Top>0.17639cm</Top>
+          <Left>7.53745cm</Left>
+          <Height>0.49417cm</Height>
           <Width>2.5cm</Width>
-          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -775,8 +597,7 @@
       </ReportItems>
       <Style>
         <Border>
-          <Color>DodgerBlue</Color>
-          <Style>Double</Style>
+          <Style>None</Style>
         </Border>
       </Style>
     </PageFooter>
@@ -791,18 +612,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSet">
+    <DataSource Name="BarberShop">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>add1fe3b-846d-4e99-aaa8-6e67e43b0052</rd:DataSourceID>
+      <rd:DataSourceID>a5c8a9df-438f-48e7-a971-19bfd6ccd3fa</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataSetUsuario">
       <Query>
-        <DataSourceName>DataSet</DataSourceName>
+        <DataSourceName>BarberShop</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -836,8 +657,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Leandro Duran\source\repos\Aplicada2-Tarea02\Registro Usuarios\Tarea 2\UI\Reporte\DataSet.xsd</rd:SchemaPath>
+        <rd:DataSetName>BarberShop</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Leandro Duran\source\repos\Aplicada2-Tarea02\Registro Usuarios\Tarea 2\UI\Reporte\BarberShop.xsd</rd:SchemaPath>
         <rd:TableName>Usuarios</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -846,5 +667,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>df6ef4e2-34c1-4159-9e43-c2ac40bf441c</rd:ReportID>
+  <rd:ReportID>40f69060-ae30-45de-a5b1-22dc8a47261c</rd:ReportID>
 </Report>

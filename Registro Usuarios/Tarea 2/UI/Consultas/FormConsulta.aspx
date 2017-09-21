@@ -56,7 +56,8 @@
 
 
                     <asp:TextBox ID="TextBox1" runat="server" Width="129px"></asp:TextBox>
-                    <asp:Button ID="Button1" CssClass="boton-buscar" runat="server" OnClick="Button1_Click" Text="Filtrar" />
+                    <asp:Button ID="Button1" CssClass="boton-buscar" runat="server" OnClick="Button1_Click" Text="Filtrar" />&nbsp
+                      <asp:Button ID="Reporte" CssClass="boton-buscar" runat="server" OnClick="Reporte_Click" Text="Imprimir" />
                 </div>
 
                 <!--fecha-->
@@ -91,7 +92,6 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="Reporte" runat="server" OnClick="Reporte_Click" Text="Imprimir" />
         <br />
         <footer>
 

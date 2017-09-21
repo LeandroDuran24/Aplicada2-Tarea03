@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea_2.Entidades;
 
 namespace Tarea_2.DAL
 {

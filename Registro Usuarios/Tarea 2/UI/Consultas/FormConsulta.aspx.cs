@@ -11,19 +11,16 @@ namespace Tarea_2.UI.Formularios
 {
     public partial class FormConsulta : System.Web.UI.Page
     {
+        public static List<Usuarios> lista { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             
                 Usuarios user = new Usuarios();
                 GridView1.DataSource = BLL.UsuarioBll.GetListTodo();
                 GridView1.DataBind();
-            
-
-            
+                lista = new List<Usuarios>();
         }
-        public List<Usuarios> lista { get; set; }
-
-
+ 
         public void SeleccionarCombo()
         {
             if(DropDownList1.SelectedIndex==0)
@@ -97,7 +94,7 @@ namespace Tarea_2.UI.Formularios
 
         protected void Reporte_Click(object sender, EventArgs e)
         {
-           
+            Response.Redirect("ReportUsuarios.aspx");
         }
     }
 }
