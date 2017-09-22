@@ -8,19 +8,12 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        
-        <asp:ScriptManager ID="ScriptManager1" runat="server">
-        </asp:ScriptManager>
-        
-          <rsweb:ReportViewer ID="ReportViewer1" runat="server" BackColor="" ClientIDMode="AutoID" HighlightBackgroundColor="" InternalBorderColor="204, 204, 204" InternalBorderStyle="Solid" InternalBorderWidth="1px" LinkActiveColor="" LinkActiveHoverColor="" LinkDisabledColor="" PrimaryButtonBackgroundColor="" PrimaryButtonForegroundColor="" PrimaryButtonHoverBackgroundColor="" PrimaryButtonHoverForegroundColor="" SecondaryButtonBackgroundColor="" SecondaryButtonForegroundColor="" SecondaryButtonHoverBackgroundColor="" SecondaryButtonHoverForegroundColor="" SplitterBackColor="" ToolbarDividerColor="" ToolbarForegroundColor="" ToolbarForegroundDisabledColor="" ToolbarHoverBackgroundColor="" ToolbarHoverForegroundColor="" ToolBarItemBorderColor="" ToolBarItemBorderStyle="Solid" ToolBarItemBorderWidth="1px" ToolBarItemHoverBackColor="" ToolBarItemPressedBorderColor="51, 102, 153" ToolBarItemPressedBorderStyle="Solid" ToolBarItemPressedBorderWidth="1px" ToolBarItemPressedHoverBackColor="153, 187, 226" Height="635px" style="margin-right: 17px" Width="1365px">
-              <localreport reportembeddedresource="Report.rdlc" reportpath="UI\Reporte\Usuarios.rdlc">
-              </localreport>
-             
-              
-        </rsweb:ReportViewer>  
+    <form id="formulario" runat="server">
+        <asp:ScriptManager ID="ScriptManager" runat="server"></asp:ScriptManager>
+        <rsweb:ReportViewer ID="ReportViewer" runat="server" ProcessingMode="Local" Height="715px" Width="967px" style="margin-right: 57px" AsyncRendering="False">
+            <ServerReport ReportPath="" ReportServerUrl="" />
+        </rsweb:ReportViewer>
 
-        
     </form>
 </body>
 </html>

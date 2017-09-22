@@ -26,8 +26,8 @@
                         <a class="navbar-brand" href="#">BarberShop</a>&nbsp
                     </div>
                     <ul class="nav navbar-nav">
-                        <li><a href="Menu Principal.aspx"><span class="glyphicon glyphicon-home">Inicio &nbsp</span></a></li>
-                        <li><a href="UsuarioForm.aspx"><span class="glyphicon glyphicon-user">Usuarios &nbsp</span></a></li>
+                        <li><a href="../Formularios/MenuForm.aspx"><span class="glyphicon glyphicon-home">Inicio &nbsp</span></a></li>
+                        <li><a href="../Formularios/UsuarioForm.aspx"><span class="glyphicon glyphicon-user">Usuarios &nbsp</span></a></li>
                         <li class="active"><a href="../Consultas/FormConsulta.aspx"><span class="glyphicon glyphicon-search">Consulta &nbsp</span></a></li>
                         <li><a href="../Reporte/ReportUsuarios.aspx"><span class="glyphicon glyphicon-list-alt">Reporte &nbsp</span></a></li>
 
@@ -47,26 +47,28 @@
                 <div class="text-center">
                     <label for="Busqueda:">Busqueda</label>
 
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Width="104px" Height="22px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Width="110px" Height="22px">
                         <asp:ListItem>Id</asp:ListItem>
                         <asp:ListItem>Nombre</asp:ListItem>
                         <asp:ListItem>Fecha</asp:ListItem>
                         <asp:ListItem>Todos</asp:ListItem>
                     </asp:DropDownList>
+                    &nbsp
 
 
-                    <asp:TextBox ID="TextBox1" runat="server" Width="129px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
                     <asp:Button ID="Button1" CssClass="boton-buscar" runat="server" OnClick="Button1_Click" Text="Filtrar" />&nbsp
-                      <asp:Button ID="Reporte" CssClass="boton-buscar" runat="server" OnClick="Reporte_Click" Text="Imprimir" />
+                      
                 </div>
 
                 <!--fecha-->
                 <div class="text-center">
                     <p>
                         <label for="Desde:">Desde </label>
-                        &nbsp;<asp:TextBox ID="desdeFecha" runat="server" Width="141px"></asp:TextBox>
+                        &nbsp;<asp:TextBox ID="desdeFecha" runat="server" Width="120px"></asp:TextBox>
                         <label for="hasta">Hasta</label>
-                        <asp:TextBox ID="hastaFecha" runat="server" Width="162px"></asp:TextBox>
+                        <asp:TextBox ID="hastaFecha" runat="server" Width="120px"></asp:TextBox>
+                        <a id="Reporte" href="../Reporte/ReportUsuarios.aspx" class="boton-buscar" >Imprimir</a>
 
                     </p>
 

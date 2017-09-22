@@ -20,20 +20,21 @@ namespace Tarea_2.UI.Reporte
             ReportViewer1.DataBind();
             ReportViewer1.LocalReport.Refresh();*/
 
+           // string lista =Request.QueryString["lista"];
+            
 
-            ReportViewer1.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Local;
-            ReportViewer1.Reset();
-            ReportViewer1.LocalReport.ReportPath = Server.MapPath(@"~\UI\Reporte\Usuarios.rdlc");
-            ReportViewer1.LocalReport.DataSources.Clear();
 
-            ReportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetUsuario",
+            ReportViewer.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Local;
+            ReportViewer.Reset();
+            ReportViewer.LocalReport.ReportPath = Server.MapPath(@"Usuarios.rdlc");
+            ReportViewer.LocalReport.DataSources.Clear();
+
+            ReportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("DataSetUsuario",
                 FormConsulta.lista));
 
-            ReportViewer1.LocalReport.Refresh();
+            ReportViewer.LocalReport.Refresh();
 
            
           }
-
-
     }
 }

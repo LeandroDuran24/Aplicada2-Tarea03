@@ -16,9 +16,10 @@ namespace Tarea_2.UI.Formularios
         {
             
                 Usuarios user = new Usuarios();
-                GridView1.DataSource = BLL.UsuarioBll.GetListTodo();
-                GridView1.DataBind();
-                lista = new List<Usuarios>();
+            /* GridView1.DataSource = BLL.UsuarioBll.GetListTodo();
+             GridView1.DataBind();*/
+            lista = BLL.UsuarioBll.GetListTodo();
+
         }
  
         public void SeleccionarCombo()
@@ -81,7 +82,8 @@ namespace Tarea_2.UI.Formularios
             }
             GridView1.DataSource = lista;
             GridView1.DataBind();
-
+      
+            
         }
 
  
@@ -94,7 +96,7 @@ namespace Tarea_2.UI.Formularios
 
         protected void Reporte_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ReportUsuarios.aspx");
+            
         }
     }
 }
